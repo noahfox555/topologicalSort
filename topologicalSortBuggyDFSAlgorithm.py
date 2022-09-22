@@ -141,7 +141,7 @@ def main():
     finalList = []
     for n in topologicalSortedList:
         finalList.append((n.name, n.finish))
-
+    finalList.reverse()
     print(finalList)
 
 main()
