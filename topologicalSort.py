@@ -39,7 +39,7 @@ def DFS(graph, sortedCourseList):
                 if (nextCourse.color == WHITE):
                     nextCourse.color = GRAY
                     depth = depth + 1
-                    nextCourse.depth = depth + 1
+                    nextCourse.depth = depth
                     nextCourse.parent = c
                     stack.append(nextCourse)
             c.color = BLACK
